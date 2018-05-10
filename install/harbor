@@ -1,0 +1,14 @@
+一.下载
+下载地址：https://github.com/vmware/harbor/releases
+下载一个Harbor offline installer的离线版本，含有所需要的
+
+二.修改harbor的主配置文件
+vim harbor/harbor.cfg
+hostname = hub.wujihua.com：8080
+
+三.修改docker-compose.yml的挂载，配置到自定义的目录
+所有volumes都放在当前目录下面
+
+四.执行install.sh脚本，之前需要安装docker-compose
+
+
