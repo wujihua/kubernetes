@@ -3,6 +3,7 @@
 kubectl get [option] 
 例：kubectl get deployments(aka 'deploy')
    kubectl get pods -o wide
+   kubectl get pods -o wide -l app=nginx（查询相同label的pod）
    kubectl get services(aka 'svc')
 
 2.运行
