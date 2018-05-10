@@ -1,0 +1,4 @@
+1.apiserver的负载均衡高可用原理：启动一个service（kubernetes：ClusterIP）固定一个内部ip，多个master节点上的这个ClusterIP都是一样的
+查看命令：kubectl describe svc kubernetes
+
+
