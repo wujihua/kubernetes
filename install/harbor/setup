@@ -11,3 +11,6 @@ hostname = hub.wujihua.com：8080
 
 四.执行install.sh脚本，之前需要安装docker-compose
 
+#五.推送镜像
+例：docker tag openjdk:7-jre hub.wujihua:8080/kubernetes/openjdk:7-jre
+    docker push hub.wujihua:8080/kubernetes/openjdk:7-jre
