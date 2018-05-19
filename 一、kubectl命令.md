@@ -1,0 +1,25 @@
+# 一、kubectl使用
+## 1.快读get信息
+kubectl get [option] 
+例：kubectl get deployments(aka 'deploy')
+   kubectl get pods -o wide
+   kubectl get pods -o wide -l app=nginx（查询相同label的pod）
+   kubectl get services(aka 'svc')
+
+## 2.运行
+kubectl run [option]
+例：kubectl run kubernetes-bootcamp --image=jocatalin/kubernetes-bootcamp:v1 --port=8080 
+
+## 3.获取详细信息
+kubecet decribe deployment [option]
+例：kubectl describe deploy nginx-deployment
+
+## 4.扩缩容
+kubectl scale deploy kubernetes-bootcamp --replicas=4
+
+## 5.修改镜像
+kubectl set image deploy kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
+查看更新状态
+kubectl rollout status deploy kubernetes-bootcamp
+回退上一步
+kubectl rollout undo deploy kubernetes-bootcamp
