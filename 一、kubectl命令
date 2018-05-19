@@ -1,4 +1,4 @@
-#一、kubectl使用#
+# 一、kubectl使用
 1.快读get信息
 kubectl get [option] 
 例：kubectl get deployments(aka 'deploy')
@@ -7,7 +7,7 @@ kubectl get [option]
    kubectl get services(aka 'svc')
 
 2.运行
-kubectl run [option]
+# kubectl run [option]
 例：kubectl run kubernetes-bootcamp --image=jocatalin/kubernetes-bootcamp:v1 --port=8080 
 
 3.获取详细信息
