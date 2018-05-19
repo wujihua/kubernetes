@@ -1,0 +1,32 @@
+[Unit]
+Description=Etcd Server
+After=network.target
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=notify
+WorkingDirectory=/var/lib/etcd/
+User=root
+ExecStart=/usr/local/bin/etcd \
+  --name=etcd1 \
+  --cert-file=/etc/kubernetes/ca/etcd/etcd.pem \
+  --key-file=/etc/kubernetes/ca/etcd/etcd-key.pem \
+  --peer-cert-file=/etc/kubernetes/ca/etcd/etcd.pem \
+  --peer-key-file=/etc/kubernetes/ca/etcd/etcd-key.pem \
+  --trusted-ca-file=/etc/kubernetes/ca/ca.pem \
+  --peer-trusted-ca-file=/etc/kubernetes/ca/ca.pem \
+  --initial-advertise-peer-urls=https://192.168.0.101:2380 \
+  --listen-peer-urls=https://192.168.0.101:2380 \
+  --listen-client-urls=https://192.168.0.101:2379,http://127.0.0.1:2379 \
+  --advertise-client-urls=https://192.168.0.101:2379 \
+  --initial-cluster-token=k8s-etcd-cluster \
+  --initial-cluster=etcd1=https://192.168.0.186:2380,etcd2=https://192.168.0.172:2380,etcd3=https://192.168.0.173:2380 \
+  --initial-cluster-state=new \
+  --data-dir=/var/lib/etcd/
+Restart=on-failure
+RestartSec=5
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
