@@ -1,4 +1,4 @@
-一、kubectl使用
+#一、kubectl使用#
 1.快读get信息
 kubectl get [option] 
 例：kubectl get deployments(aka 'deploy')
