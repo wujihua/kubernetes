@@ -2,6 +2,6 @@
 ## [一、预先准备环境](https://github.com/wujihua/kubernetes/blob/master/docs/1.prepare.md)
 ## [二、完整集群部署](https://github.com/wujihua/kubernetes/blob/master/docs/2.cluster-deployment.md)
 
-<div style="text-align: center">
-![alipay](https://github.com/wujihua/kubernetes/blob/master/image/alipay1.png)![wechat](https://github.com/wujihua/kubernetes/blob/master/image/wechat1.png)
+<div align=center>
+![](https://github.com/wujihua/kubernetes/blob/master/image/alipay1.png)![](https://github.com/wujihua/kubernetes/blob/master/image/wechat1.png)
 </div>
