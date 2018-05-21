@@ -6,6 +6,6 @@
 ![](https://github.com/wujihua/kubernetes/blob/master/image/alipay1.png) ![](https://github.com/wujihua/kubernetes/blob/master/image/wechat1.png)
 </div>
 
-<div style="align: center">
-<img src="https://github.com/wujihua/kubernetes/blob/master/image/alipay1.png"/>
+<div align=center>
+<img src="https://github.com/wujihua/kubernetes/blob/master/image/alipay1.png"/><img src="https://github.com/wujihua/kubernetes/blob/master/image/wechat1.png"/>
 </div>
