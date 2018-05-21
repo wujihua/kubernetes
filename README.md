@@ -3,5 +3,9 @@
 ## [二、完整集群部署](https://github.com/wujihua/kubernetes/blob/master/docs/2.cluster-deployment.md)
 
 <div align=center>
-![](https://github.com/wujihua/kubernetes/blob/master/image/alipay1.png)![](https://github.com/wujihua/kubernetes/blob/master/image/wechat1.png)
+![](https://github.com/wujihua/kubernetes/blob/master/image/alipay1.png) ![](https://github.com/wujihua/kubernetes/blob/master/image/wechat1.png)
+</div>
+
+<div style="align: center">
+<img src="https://github.com/wujihua/kubernetes/blob/master/image/alipay1.png"/>
 </div>
